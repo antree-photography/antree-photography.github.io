@@ -9,8 +9,14 @@ layout: default
     <header id="header">
         <h1><a href="index.html"><strong>{{ site.header.title }}</strong> {{ site.header.subtitle }}</a></h1>
         <nav>
-            <ul>
-                <li><a href="#footer" class="icon fa-info-circle">About</a></li>
+            <ul class="icons">
+                {% if site.social_urls.instagram %}
+                    <li>
+                        <a href="{{ site.social_urls.instagram }}" class="icon fa-instagram">
+                            <span class="label">Instagram</span>
+                        </a>
+                    </li>
+                {% endif %}
             </ul>
         </nav>
     </header>

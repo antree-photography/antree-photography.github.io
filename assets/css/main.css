@@ -1985,12 +1985,11 @@
 
 /* Footer */
 
-footer.fixed-bottom {
-  background-color: #242629;
-  font-size: 0.75rem;
-  border-top: 1px solid #242629;
-  .container {
-    padding-top: 9px;
-    padding-bottom: 8px;
-  }
-}
+	#footer .copyright {
+		color: #505051;
+		font-size: 0.9em;
+	}
+
+		#footer .copyright a {
+			color: inherit;
+		}

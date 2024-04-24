@@ -40,20 +40,10 @@ layout: default
 
 <footer class="fixed-bottom">
     <div class="">
-        <h1 class="footer"><a href="index.html"><strong>{{ site.header.title }}</strong> {{ site.header.subtitle }}</a></h1>
-    </div>
-    <div class="">
-        <h1 class="footer"><a href="index.html"><strong>{{ site.header.title }}</strong> {{ site.header.subtitle }}</a></h1>
-    </div>
-    <div class="">
-        <ul class="icons">
-            {% if site.social_urls.instagram %}
-                <li>
-                    <a href="{{ site.social_urls.instagram }}" class="icon fa-instagram" target="_blank">
-                        <span class="label">Instagram</span>
-                    </a>
-                </li>
-            {% endif %}
-        </ul>
+        <span class="footer"><a href="index.html"><strong>{{ site.header.title }}</strong> {{ site.header.subtitle }}</a></span>
+        <span class="footer"><a href="index.html"><strong>{{ site.header.title }}</strong> {{ site.header.subtitle }}</a></span>
+        <span><a href="{{ site.social_urls.instagram }}" class="icon fa-instagram" target="_blank">
+            <span class="label">Instagram</span>
+        </a></span>
     </div>
 </footer>

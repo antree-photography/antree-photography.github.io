@@ -13,7 +13,7 @@ footer.fixed-bottom {
   justify-content: space-around;
 }
 
-h1.footer {
+span.footer {
   margin: 0px;
   color: #a0a0a1;
   font-size: 1.25em;

@@ -32,6 +32,12 @@ projects:
     </header>
     -->
 
+    {% assign settings = site.images.overview.projects %}
+
+    {% for item in settings %}
+      {{ item }}
+    {% endfor %}
+
     <!-- Main -->
     <div id="main" data-exif='{{ site.exif }}'>
         {% for image in site.static_files %}

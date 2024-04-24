@@ -1,0 +1,9 @@
+projects:
+    Test1:
+        folder: Test1
+        name: test
+        thumb: a
+    Test2:
+        folder: Test2
+        name: test
+        thumb: a

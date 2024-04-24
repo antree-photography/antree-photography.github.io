@@ -46,7 +46,7 @@ a.no {
 }
 
 a.no:hover {
-  color: #a0a0a1;
+  color: #a0a0a1 !important;
   border-bottom: none;
 }
 

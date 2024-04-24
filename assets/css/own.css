@@ -46,7 +46,7 @@ a.no {
 }
 
 a.no:hover {
-  color: #a0a0a1 !important;
+  color: #ffffff !important;
   border-bottom: none;
 }
 
@@ -56,7 +56,7 @@ div.footer {
 }
 
 @media (min-width: 768px) {
-    .footer {
+    div.footer {
         flex-direction: row; /* Switch back to horizontal layout for larger screens */
         justify-content: space-between;
     }

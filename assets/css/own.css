@@ -20,13 +20,20 @@ span.footer {
 }
 
 span.thanks {
-  margin-left: 20px;
   font-size: 1em;
   color: #a0a0a1;
   display: inline-block;
   line-height: 1;
   flex-grow: 1;
   text-align: center;
+}
+
+span.footer {
+  margin-right: 20px;
+  font-size: 1.25em;
+  color: #a0a0a1;
+  display: inline-block;
+  line-height: 1;
 }
 
 body {

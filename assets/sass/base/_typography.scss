@@ -170,18 +170,3 @@
 	.align-right {
 		text-align: right;
 	}
-
-	footer.fixed-bottom {
-  background-color: _palette(bg);
-  font-size: 0.75rem;
-  border-top: 1px solid _palette(bg);
-  .container {
-    padding-top: 9px;
-    padding-bottom: 8px;
-  }
-  a {
-    &:hover {
-      text-decoration: none;
-    }
-  }
-}

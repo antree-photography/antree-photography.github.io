@@ -60,4 +60,14 @@ div.footer {
         flex-direction: row; /* Switch back to horizontal layout for larger screens */
         justify-content: space-between;
     }
+
+    span.insta {
+      margin-right: 0px;
+      text-align: center;
+    }
+
+    span.footer {
+      margin-left: 0px;
+      text-align: center;
+    }
 }

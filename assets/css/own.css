@@ -52,13 +52,13 @@ a.no:hover {
 
 div.footer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row; /* Switch back to horizontal layout for larger screens */
+  justify-content: space-between;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     div.footer {
-        flex-direction: row; /* Switch back to horizontal layout for larger screens */
-        justify-content: space-between;
+      flex-direction: column;
     }
 
     span.insta {

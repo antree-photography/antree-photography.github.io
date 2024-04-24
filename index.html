@@ -29,8 +29,7 @@ layout: default
         <article class="thumb">
             <a href="{{ site.baseurl }}{{ site.image_fulls_loc }}/{{ image.name }}" class="image">
                 <div class="overlay">
-                    {% assign path = image.path %}
-                    {% assign parts = path | split: "/" %}
+                    {% assign parts = image.path | split: "/" %}
                     <p>{{ site.baseurl }}/{{ parts[1] }}</p>
                 </div>
                 <img src="{{ site.baseurl }}{{ site.image_thumbs_loc }}/{{ image.name }}" alt=""

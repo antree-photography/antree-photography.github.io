@@ -52,5 +52,12 @@ a.no:hover {
 
 div.footer {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .footer {
+        flex-direction: row; /* Switch back to horizontal layout for larger screens */
+        justify-content: space-between;
+    }
 }

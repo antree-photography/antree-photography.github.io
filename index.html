@@ -52,9 +52,11 @@ projects:
     </div>
 </div>
 
-{% for item in projects.items %}
-  {{ item }}
-    {{ item.folder }}
+{% for project_name, project_details in page.projects %}
+  Project Name: {{ project_name }}
+  Folder: {{ project_details.folder }}
+  Name: {{ project_details.name }}
+  Thumbnail: {{ project_details.thumb }}
 {% endfor %}
 
 <footer class="fixed-bottom">

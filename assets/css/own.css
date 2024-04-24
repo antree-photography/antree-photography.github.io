@@ -19,15 +19,25 @@ span.footer {
   text-transform: uppercase;
 }
 
+span.theme {
+  margin-left: 20px;
+  font-size: 1em;
+  color: #a0a0a1;
+  display: inline-block;
+  line-height: 1;
+}
+
 body {
   padding: 0;
 }
 
 a {
   border-bottom: none;
+  color: #a0a0a1;
 }
 
 a:hover {
   color: #a0a0a1;
+  border-bottom: none;
 }
 

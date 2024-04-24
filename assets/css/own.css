@@ -19,25 +19,31 @@ span.footer {
   text-transform: uppercase;
 }
 
-span.theme {
+span.thanks {
   margin-left: 20px;
   font-size: 1em;
   color: #a0a0a1;
   display: inline-block;
   line-height: 1;
+  flex-grow: 1;
+  text-align: center;
 }
 
 body {
   padding: 0;
 }
 
-a {
+a.no {
   border-bottom: none;
   color: #a0a0a1;
 }
 
-a:hover {
+a.no:hover {
   color: #a0a0a1;
   border-bottom: none;
 }
 
+div.footer {
+  display: flex;
+  justify-content: space-between;
+}

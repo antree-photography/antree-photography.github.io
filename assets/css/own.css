@@ -1,7 +1,6 @@
 footer.fixed-bottom {
-  background-color: #a0a0a1;
+  background-color: #242629;
   font-size: 0.75rem;
-  border-top: 1px solid #a0a0a1;
   padding-top: 9px;
   padding-bottom: 8px;
   position: fixed;
@@ -13,4 +12,7 @@ footer.fixed-bottom {
 
 h1.footer {
   margin: 0px;
+  color: #a0a0a1;
+  font-size: 1em;
+  padding-left: 22px;
 }

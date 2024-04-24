@@ -13,6 +13,18 @@ footer.fixed-bottom {
 h1.footer {
   margin: 0px;
   color: #a0a0a1;
-  font-size: 1em;
+  font-size: 1.25em;
   padding-left: 22px;
+}
+
+body {
+  padding: 0;
+}
+
+a {
+  order-bottom: none;
+}
+
+a:hover {
+  color: #a0a0a1;
 }

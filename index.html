@@ -1,5 +1,13 @@
 ---
 layout: default
+
+projects:
+    Test1:
+        folder:
+        name:
+    Test2:
+        folder:
+        name:
 ---
 
 <!-- Wrapper -->
@@ -41,6 +49,11 @@ layout: default
         {% endfor %}
     </div>
 </div>
+
+{% for item in projects.items %}
+  {{ item }}
+    {{ item.folder }}
+{% endfor %}
 
 <footer class="fixed-bottom">
     <div class="footer">

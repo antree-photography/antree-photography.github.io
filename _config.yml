@@ -17,3 +17,8 @@ web_design: "AJ"
 exif: '[{"tag": "Model", "icon": "camera-retro"}, {"tag": "FNumber", "icon": "dot-circle-o"}, {"tag": "ExposureTime", "icon": "clock-o"}, {"tag": "ISOSpeedRatings", "icon": "info-circle"}]'
 social_urls:
   instagram: "https://www.instagram.com/antreepower/"
+
+collections:
+  projects:
+    output: true
+    permalink: /_projects/:path/

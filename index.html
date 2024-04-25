@@ -11,9 +11,10 @@ layout: default
     <div id="main" data-exif='{{ site.exif }}'>
         {% for project_details in projects %}
         <article class="thumb">
-            <a href="{{ site.baseurl }}/projects/{{ project_details.folder }}" style="background-image: url('{{ site.baseurl }}/images/{{ project_details.folder }}/{{ project_details.thumb }}'); outline: 0px;" class="projectimage">
+            <div style="background-image: url('{{ site.baseurl }}/images/{{ project_details.folder }}/{{ project_details.thumb }}'); outline: 0px;" class="projectimage"></div>
+            <a href="{{ site.baseurl }}/projects/{{ project_details.folder }}" >
                 <div class="overlay">
-                    <p>{{ project_details.name }} </p>
+                    <p>{{ project_details.name }} <a></a></p>
                 </div>
             </a>
 

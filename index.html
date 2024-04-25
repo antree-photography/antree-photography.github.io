@@ -1,22 +1,15 @@
 ---
 layout: default
-projects:
-  - folder: Test1
-    name: test
-    thumb: DSC_0069.jpg
-  - folder: Test2
-    name: test
-    thumb: DSC_0079.jpg
 ---
 
 <!-- Wrapper -->
 <div id="wrapper">
 
-   {% assign ppp = site.projects %}
+   {% assign projects = site.projects %}
 
     <!-- Main -->
     <div id="main" data-exif='{{ site.exif }}'>
-        {% for p in ppp %}
+        {% for project_details in projects %}
         <article class="thumb">
             <a href="{{ site.baseurl }}/images/{{ project_details.folder }}/fulls/{{ project_details.thumb }}" class="image">
                 <div class="overlay">

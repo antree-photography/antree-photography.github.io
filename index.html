@@ -29,6 +29,8 @@ projects:
     </header>
     -->
 
+    {% assign projects = site.images.overview.projects %}
+
     <!-- Main -->
     <div id="main" data-exif='{{ site.exif }}'>
         {% for project_details in page.projects %}
@@ -47,11 +49,6 @@ projects:
     </div>
 </div>
 
-{% for project_details in page.projects %}
-  Folder: {{ project_details.folder }}
-  Name: {{ project_details.name }}
-  Thumbnail: {{ project_details.thumb }}
-{% endfor %}
 
 <footer class="fixed-bottom">
     <div class="footer">

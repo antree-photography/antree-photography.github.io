@@ -1,5 +1,5 @@
 ---
 folder: test1
-name: test
+name: This is a test
 thumb: DSC_0069.jpg
 ---

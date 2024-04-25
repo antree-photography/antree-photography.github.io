@@ -21,4 +21,4 @@ social_urls:
 collections:
   projects:
     output: true
-    permalink: /_projects/:path/
+    permalink: /projects/:path/

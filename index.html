@@ -11,7 +11,7 @@ layout: default
     <div id="main" data-exif='{{ site.exif }}'>
         {% for project_details in projects %}
         <article class="thumb">
-            <a href="{{ site.baseurl }}/images/{{ project_details.folder }}/fulls/{{ project_details.thumb }}" class="image">
+            <a href="{{ site.baseurl }}/projects/{{ project_details.folder }}" class="image">
                 <div class="overlay">
                     {% assign parts = image.path | split: "/" %}
                     <p>{{ project_details.name }}</p>

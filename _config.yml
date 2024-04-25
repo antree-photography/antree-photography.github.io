@@ -20,5 +20,7 @@ social_urls:
 
 collections:
   projects:
+    defaults:
+      layout: project
     output: true
     permalink: /projects/:path/

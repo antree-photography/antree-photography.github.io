@@ -1,15 +1,12 @@
 ---
 layout: default
-
 projects:
-    Test1:
-        folder: Test1
-        name: test
-        thumb: a
-    Test2:
-        folder: Test2
-        name: test
-        thumb: a
+  - folder: Test1
+    name: test
+    thumb: a
+  - folder: Test2
+    name: test
+    thumb: a
 ---
 
 <!-- Wrapper -->
@@ -38,24 +35,7 @@ projects:
       {{ item }}
     {% endfor %}
 
-    <!-- Main -->
-    <div id="main" data-exif='{{ site.exif }}'>
-        {% for image in site.static_files %}
-        {% if image.path contains 'fulls' %}
-        <article class="thumb">
-            <a href="{{ site.baseurl }}{{ site.image_fulls_loc }}/{{ image.name }}" class="image">
-                <div class="overlay">
-                    {% assign parts = image.path | split: "/" %}
-                    <p>{{ site.baseurl }}/{{ parts[1] }}/{{ parts[2] }}</p>
-                </div>
-                <img src="{{ site.baseurl }}{{ site.image_thumbs_loc }}/{{ image.name }}" alt=""
-                     data-name="{{ image.name }}"/></a>
-            <!--<h2></h2>
-            <p></p>-->
-        </article>
-        {% endif %}
-        {% endfor %}
-    </div>
+
 </div>
 
 {% for project_details in page.projects %}
@@ -64,12 +44,4 @@ projects:
   Thumbnail: {{ project_details.thumb }}
 {% endfor %}
 
-<footer class="fixed-bottom">
-    <div class="footer">
-        <span class="footer"><a href="index.html" class="no"><strong>{{ site.header.title }}</strong> {{ site.header.subtitle }}</a></span>
-        <span class="thanks">Powered by <a href="https://jekyllrb.com/" target="_blank" class="no">Jekyll</a> based on the <a href="https://github.com/rampatra/photography" class="no">Rampatra</a> theme.</span>
-        <span class="insta"><a href="{{ site.social_urls.instagram }}" class="icon fa-instagram no" target="_blank">
-            <span class="label">Instagram</span>
-        </a></span>
-    </div>
-</footer>
+

@@ -2,4 +2,31 @@
 layout: default
 ---
 
-<h1> Test </h1>
+<!-- Wrapper -->
+<div id="wrapper">
+
+    <!-- Header -->
+    <header id="header">
+        <h1><a href="index.html"><strong>{{ site.header.title }}</strong> {{ site.header.subtitle }}</a></h1>
+        <nav>
+            <ul>
+                <li><a href="#footer" class="icon fa-info-circle">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <div id="main" data-exif='{{ site.exif }}'>
+        {% for image in site.static_files %}
+            {% if image.path contains page.folder %}
+            <article class="thumb">
+                <a href="{{ site.baseurl }}/images/{{ page.folder }}/{{ image.name }}" class="image">
+                    <img src="{{ site.baseurl }}/images/{{ page.folder }}/{{ image.name }}" alt=""
+                         data-name="{{ image.name }}"/></a>
+                <!--<h2></h2>
+                <p></p>-->
+            </article>
+            {% endif %}
+            {% endfor %}
+    </div>
+</div>

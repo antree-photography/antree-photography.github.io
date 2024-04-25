@@ -33,12 +33,12 @@ projects:
 
     <!-- Main -->
     <div id="main" data-exif='{{ site.exif }}'>
-        {% for project_details in page.projects %}
+        {% for project_details in projects %}
         <article class="thumb">
             <a href="{{ site.baseurl }}/images/{{ project_details.folder }}/thumbs/{{ project_details.thumb }}" class="image">
                 <div class="overlay">
                     {% assign parts = image.path | split: "/" %}
-                    <p>{{ project_details.name }}</p>
+                    <p>{{ project_details.name }} 3</p>
                 </div>
                 <img src="{{ site.baseurl }}/images/{{ project_details.folder }}/fulls/{{ project_details.thumb }}" alt=""
                      data-name="{{ project_details.thumb }}"/></a>

@@ -56,9 +56,17 @@ div.footer {
   justify-content: space-between;
 }
 
+#wrapper {
+        margin-bottom: 2em;
+    }
+
 @media (max-width: 768px) {
     div.footer {
       flex-direction: column;
+    }
+
+    #wrapper {
+        margin-bottom: 4em;
     }
 
     span.insta {

@@ -1,17 +1,18 @@
 ---
 layout: default
 ---
-
-<div id="main" data-exif='{{ site.exif }}'>
-    {% for image in site.static_files %}
-        {% if image.path contains page.folder %}
-        <article class="thumb">
-            <a href="{{ site.baseurl }}{{ site.image_fulls_loc }}/{{ image.name }}" class="image">
-                <img src="{{ site.baseurl }}/images/{{ page.folder }}/thumbs/{{ image.name }}" alt=""
-                     data-name="{{ image.name }}"/></a>
-            <!--<h2></h2>
-            <p></p>-->
-        </article>
-        {% endif %}
-        {% endfor %}
+<div id="wrapper">
+    <div id="main" data-exif='{{ site.exif }}'>
+        {% for image in site.static_files %}
+            {% if image.path contains page.folder %}
+            <article class="thumb">
+                <a href="{{ site.baseurl }}/images/{{ page.folder }}/fulls/{{ image.name }}" class="image">
+                    <img src="{{ site.baseurl }}/images/{{ page.folder }}/thumbs/{{ image.name }}" alt=""
+                         data-name="{{ image.name }}"/></a>
+                <!--<h2></h2>
+                <p></p>-->
+            </article>
+            {% endif %}
+            {% endfor %}
+    </div>
 </div>

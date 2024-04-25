@@ -9,11 +9,37 @@ projects:
     thumb: DSC_0079.jpg
 ---
 
-<h1> hallo </h1>
+<!-- Wrapper -->
+<div id="wrapper">
 
-{% assign ppp = site.projects %}
-{% for p in ppp %}
-  Folder: {{ p.folder }}
-  Name: {{ p.name }}
-  Thumbnail: {{ p.thumbnail }}
-{% endfor %}
+   {% assign ppp = site.projects %}
+
+    <!-- Main -->
+    <div id="main" data-exif='{{ site.exif }}'>
+        {% for p in ppp %}
+        <article class="thumb">
+            <a href="{{ site.baseurl }}/images/{{ project_details.folder }}/fulls/{{ project_details.thumb }}" class="image">
+                <div class="overlay">
+                    {% assign parts = image.path | split: "/" %}
+                    <p>{{ project_details.name }}</p>
+                </div>
+                <img src="{{ site.baseurl }}/images/{{ project_details.folder }}/thumbs/{{ project_details.thumb }}" alt=""
+                     data-name="{{ project_details.thumb }}"/></a>
+            <!--<h2></h2>
+            <p></p>-->
+        </article>
+        {% endfor %}
+    </div>
+</div>
+
+
+
+<footer class="fixed-bottom">
+    <div class="footer">
+        <span class="footer"><a href="index.html" class="no"><strong>{{ site.header.title }}</strong> {{ site.header.subtitle }}</a></span>
+        <span class="thanks">Powered by <a href="https://jekyllrb.com/" target="_blank" class="no">Jekyll</a> based on the <a href="https://github.com/rampatra/photography" class="no">Rampatra</a> theme.</span>
+        <span class="insta"><a href="{{ site.social_urls.instagram }}" class="icon fa-instagram no" target="_blank">
+            <span class="label">Instagram</span>
+        </a></span>
+    </div>
+</footer>

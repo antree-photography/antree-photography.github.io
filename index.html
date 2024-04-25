@@ -9,9 +9,9 @@ projects:
     thumb: DSC_0079.jpg
 ---
 
-{% assign ppp = site.projects %}
+{% assign ppp = site.collections.projects %}
 {% for p in ppp %}
   Folder: {{ p.folder }}
   Name: {{ p.name }}
-  Thumbnail: {{ p.thumb }}
+  Thumbnail: {{ p.thumbnail }}
 {% endfor %}

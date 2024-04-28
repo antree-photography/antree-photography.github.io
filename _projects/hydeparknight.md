@@ -1,6 +1,6 @@
 ---
 layout: project
 folder: hydeparknight
-name: Sunset
+name: Sunset, Chicago
 thumb: hydepark-3.jpg
 ---

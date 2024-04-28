@@ -1,6 +1,6 @@
 ---
 layout: project
-folder: botanicgardenchigao
+folder: phoenixgardenchigao
 name: Botanic Garden, Chicago
-thumb: botanic.jpg
+thumb: phoenix.jpg
 ---

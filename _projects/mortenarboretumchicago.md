@@ -1,7 +1,6 @@
 ---
 layout: project
 folder: mortenarboretumchicago
-name: Morton Arboretum Chicago
-url: https://mortonarb.org
+name: Morton Arboretum, Chicago
 thumb: morten.jpg
 ---

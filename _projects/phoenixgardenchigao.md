@@ -1,6 +1,6 @@
 ---
 layout: project
 folder: phoenixgardenchigao
-name: Botanic Garden, Chicago
+name: Garden of the Phoenix, Chicago
 thumb: phoenix.jpg
 ---

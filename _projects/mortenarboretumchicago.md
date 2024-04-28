@@ -2,5 +2,5 @@
 layout: project
 folder: mortenarboretumchicago
 name: Morton Arboretum, Chicago
-thumb: morten.jpg
+thumb: morten-3.jpg
 ---

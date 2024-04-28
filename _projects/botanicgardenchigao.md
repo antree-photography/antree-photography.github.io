@@ -2,5 +2,5 @@
 layout: project
 folder: botanicgardenchigao
 name: Botanic Garden, Chicago
-thumb: botanic.jpg
+thumb: img-100.jpg
 ---

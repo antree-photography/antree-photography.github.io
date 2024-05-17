@@ -1,6 +1,6 @@
 ---
 layout: project
 folder: maxandmimi
-name: Forest, Horhausen
+name: Dogs, Horhausen
 thumb: img-136.jpg
 ---

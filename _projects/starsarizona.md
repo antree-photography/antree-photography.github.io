@@ -1,6 +1,6 @@
 ---
 layout: project
 folder: starsarizona
-name: Desert, Flagstaff
+name: Star gazing, Flagstaff
 thumb: img-100.jpg
 ---
